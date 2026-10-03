@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="cart-container">
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th class="text-right">Price</th>
+          <th class="text-center">Quantity</th>
+          <th class="text-right">Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Product 1 -->
+        <tr data-price="N7,000">
+          <td>
+            <div class="product-info">
+              <img src="images/bov cap.jpg" alt="Cap" class="product-image" width="400px" height="400px">
+              <span class="product-title">Minimalistic shop for multipurpose use</span>
+            </div>
+          </td>
+          <td class="text-right price">N7,000</td>
+          <td class="text-center">
+            <div class="quantity-control">
+              <input type="text" value="2" class="qty-input" readonly>
+              <div class="quantity-btn-group">
+                <button class="quantity-btn plus">+</button>
+                <button class="quantity-btn minus">-</button>
+              </div>
+            </div>
+          </td>
+          <td class="text-right total-price">N14,000</td>
+        </tr>
+
+        <!-- Product 2 -->
+        <tr data-price="N25,000">
+          <td>
+            <div class="product-info">
+              <img src="images/shirtjacketc.jpg" alt="Shirt" class="product-image" height="400px" width="400px">
+              <span class="product-title">Minimalistic shop for multipurpose use</span>
+            </div>
+          </td>
+          <td class="text-right price">N25,000</td>
+          <td class="text-center">
+            <div class="quantity-control">
+              <input type="text" value="1" class="qty-input" readonly>
+              <div class="quantity-btn-group">
+                <button class="quantity-btn plus">+</button>
+                <button class="quantity-btn minus">-</button>
+              </div>
+            </div>
+          </td>
+          <td class="text-right total-price">N25,000</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <div class="cart">
+
+        <div class="tope">
+            <button class="update">Update Cart</button>
+            <button class="close">Close Coupon</button>
+        </div>
+
+        <hr>
+
+        <div class="carts-info">
+
+            <h3>subtotal N39,000</h3>
+
+            <h3>Shipping</h3>
+
+            <label>
+                <input type="radio" name="shipping">
+                Flat Rate:N2,000
+            </label>
+
+            
+            <label>
+                <input type="radio" name="shipping" checked>
+                Free Shipping
+            </label>
+        </div>
+    </div>
+
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top-btn" id="scrollTopBtn">↑</button>
+
+
+
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Details</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <link rel="stylesheet" href="style.css">
+
+
+  <div>
+    <img src="images/polo6.jpg" alt="polo6" width="500px" height="500px">
+  </div>
+
+  <div class="page-container">
+    <!-- 1. Heading on Top -->
+
+    <!-- 2. Text Paragraph Underneath -->
+    <p class="product-description">
+      <h1 class="product-title">
+  Premium Organic Cotton<br />Heavyweight Tee
+</h1>
+
+<p class="product-description">
+  Crafted from 100% breathable organic cotton, this relaxed-fit tee combines 
+  everyday durability with effortless style. Featuring reinforced stitching, 
+  pre-shrunk fabric, and an ultra-soft feel, it's designed to maintain its shape 
+  wear after wear.
+</p>
+    
+
+    <!-- 3. Quantity Section at the Bottom -->
+    <div class="quantity-row">
+      <span class="quantity-label">Quantity</span>
+      
+      <div class="quantity-box">
+        <button type="button" class="btn-qty" id="minus-btn">−</button>
+        <input type="text" id="qty-input" class="qty-number" value="1" readonly />
+        <button type="button" class="btn-qty" id="plus-btn">+</button>
+      </div>
+
+      <span class="price-text">$5</span>
+    </div>
+  </div>
+
+  <!-- Floating Action Button -->
+  <button type="button" class="floating-btn" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+  
+<!-- Newsletter Section Below -->
+<section class="newsletter-section">
+  <h2 class="title">Get promotions &amp; updates!</h2>
+  <p class="subtitle">
+    Seamlessly empower fully researched growth strategies and interoperable internal or "organic" sources credibly innovate granular internal.
+  </p>
+  
+  <form class="subscribe-form" onsubmit="event.preventDefault();">
+    <input 
+      type="email" 
+      class="email-input" 
+      placeholder="Enter your mail" 
+      required 
+    />
+    <button type="submit" class="subscribe-btn">Subscribe</button>
+  </form>
+</section>
+
+
+<footer class="sites-footer">
+        <div class="footer-container">
+
+            <div class="footer-col brand-col">
+                <h2 class="footer-logo">printXpress <span>.</span></h2>
+                <p>
+                    A place where quality clothes are made to your taste and also sold out to differenc places in the world.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Offers & Discounts</a></li>
+                    <li><a href="#">Get Coupon</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            
+            <div class="footer-col">
+                <h4>New Products</h4>
+                <ul>
+                    <li><a href="#">Guys Cloth</a></li>
+                    <li><a href="#">Face Caps</a></li>
+                    <li><a href="#">Bags</a></li>
+                    <li><a href="#">stickers for jortter</a></li>
+                </ul>
+            </div>
+
+            
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Frequently Asked Questions</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Report Payment Issues</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

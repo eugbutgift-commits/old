@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>printXpress Fashion Blog</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts: Inter & Playfair Display -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,800;1,400&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- HERO BANNER -->
+  <header class="hero-banner">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-subtitle">Trendy Fashion & Lifestyle Stories</span>
+      <h1>Our Latest Journal <br>BLOG <br> Home / Blog</h1>
+      <div class="hero-breadcrumb">
+        <a href="#">Home</a> <span>/</span> <span class="active">Blog</span>
+      </div>
+    </div>
+
+    <!-- Floating Estore Badge -->
+    <div class="floating-badge-wrap">
+      <div class="floating-badge">
+        <span>printXpress.</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class="main-content">
+    <div class="container">
+      <div class="grid-layout">
+<!-- LEFT COLUMN: MAIN BLOG POST -->
+        <article class="blog-card">
+          <div class="card-image-wrap">
+          <img src="images/blogdown (1).png" alt="Luxury Boutique Clothing Store Display">
+             
+            <!-- Red Date Badge -->
+            <div class="date-badge">
+              <span class="day">15</span>
+              <span class="month">OCT</span>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <div class="post-meta">
+              <span><i class="fa-regular fa-folder"></i> Fashion & Style</span>
+              <span><i class="fa-regular fa-clock"></i> 5 Min Read</span>
+            </div>
+
+            <h2 class="post-title">
+              <a href="#">Discovering the Autumn Collection: Bold Colors & Minimalist Lines</a>
+            </h2>
+
+            <p class="post-excerpt">
+              Explore how high-fashion trends are reshaping street fashion this season. From vibrant neon accents to sleek minimalist silhouettes, elevate your everyday wardrobe seamlessly.
+            </p>
+
+            <div class="card-footer">
+              <div class="author-info">
+                <img src="images/peee.jpg" alt="peee">
+                <span>By printXpress</span>
+              </div>
+              <a href="#" class="read-more-btn">Read Article <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- RIGHT COLUMN: SIDEBAR -->
+        <aside class="sidebar">
+
+          <!-- Search Widget -->
+          <div class="widget search-widget">
+            <h3 class="widget-title">Search Journal</h3>
+            <form action="#" onsubmit="event.preventDefault();" class="search-form">
+              <div class="input-wrapper">
+                <input type="text" placeholder="Search keyword..." required>
+                 
+              <button type="submit" class="primary-search-btn">
+                <span>SEARCH</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+
+          <!-- Category Widget -->
+          <div class="widget category-widget">
+            <h3 class="widget-title">Categories</h3>
+            <ul class="category-list">
+              <li>
+                <a href="#">
+                  <span><i class="fa-solid fa-angle-right"></i> Caps</span>
+                  <span class="count">37</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span><i class="fa-solid fa-angle-right"></i> Streetwear Trends</span>
+                  <span class="count">18</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span><i class="fa-solid fa-angle-right"></i> Luxury Lifestyle</span>
+                  <span class="count">24</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span><i class="fa-solid fa-angle-right"></i> Seasonal Collections</span>
+                  <span class="count">12</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Your Clothing Brand</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="checkout-card">
+        <div class="card-header">
+            <h2>Pay Your Clothing Brand</h2>
+            <p class="subtitle">Total Amount: <strong>N30,000</strong></p>
+        </div>
+
+        <form id="customCardForm">
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="customer@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" placeholder="1234 5678 9012 3456" maxlength="19" required>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="expiry">Expiry (MM/YY)</label>
+                    <input type="text" id="expiry" placeholder="MM/YY" maxlength="5" required>
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="password" id="cvv" placeholder="123" maxlength="3" required>
+                </div>
+            </div>
+
+            <button type="submit" id="pay-btn" style="width: 120px; height: 100px;">Pay N30,000 Now</button>
+        </form>
+
+        <div class="security-badge">
+            🔒 Encrypted & Direct Settlement
+        </div>
+    </div>
+
+</body>
+</html>

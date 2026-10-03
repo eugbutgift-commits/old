@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product-list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="product-page-container">
+        <aside class="left-sidebar">
+            <div class="filter-group">
+                <button class="filter-header" onclick="toggleDropdown('Category-dropdown', this)">
+                    <span>Category</span>
+                </button>
+                <div id="category-dropdown" class="filter-content open">
+                    <ul class="category-list">
+                        <li onclick="filterCategory('Category 1')">Category 1</li>
+                        <li onclick="filterCategory('Category 2')">Category 2</li>
+                        <li onclick="filterCategory('Category 3')">Category 3</li>
+                        <li onclick="filterCategory('Category 4')">Category 4</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <button class="filter-header"  onclick="toggleDropdown('type-dropdown', this)">
+                    <span>Type</span>
+                </button>
+                <div id="type-dropdown" class="filter-content">
+                    <ul class="category-list">
+                        <li onclick="filterCategory('Type 1')">Type 1</li>
+                        <li onclick="filterCategory('Type 2')">Type 2</li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+         <div class="products-grids">
+
+            <div class="products-cards">
+                <div class="products-img-boxs">
+                    <span class="badge-new">New</span>
+                    <img src="images/croptshirt7.jpg" alt="croptshirt7">
+                </div>
+                <div class="products-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="products-titles">Boys crop shirt</div>
+                <div class="products-prices">
+                    <span class="current-price">N17,000</span>
+                    <span class="old-price">N20,000</span>
+                </div>
+            </div>
+            <div class="products-cards">
+                <div class="products-img-boxs">
+                    <span class="badge-new">New</span>
+                    <img src="images/facecap.jpg" alt="facecap">
+                </div>
+                <div class="products-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="products-titles">Unisex face cap</div>
+                <div class="products-prices">
+                    <span class="current-price">7,000</span>
+                    <span class="old-price">N5,000</span>
+                </div>
+            </div>
+            <div class="products-cards">
+                <div class="products-img-boxs">
+                    <span class="badge-new">New</span>
+                    <img src="images/jerseyh.jpg" alt="jerseyh">
+                </div>
+                <div class="products-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="products-titles">Jersey for sport</div>
+                <div class="products-prices">
+                    <span class="current-price">N20,000</span>
+                    <span class="old-price">N25,000</span>
+                </div>
+            </div>
+            <div class="products-cards">
+                <div class="products-img-boxs">
+                    <span class="badge-new">New</span>
+                    <img src="images/sweetjacket6.jpg" alt="sweetjacket6">
+                </div>
+                <div class="products-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="products-titles">Shirt Jacket</div>
+                <div class="products-prices">
+                    <span class="current-price">N25,000</span>
+                    <span class="old-price">N30,000</span>
+                </div>
+            </div>
+            <div class="products-cards">
+                <div class="products-img-boxs">
+                    <span class="badge-new">New</span>
+                    <img src="images/tshirt3.jpg" alt="tshirt3">
+                </div>
+                <div class="products-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="products-titles">T-Shirt</div>
+                <div class="products-prices">
+                    <span class="current-price">N18,000</span>
+                    <span class="old-price">N15,000</span>
+                </div>
+            </div>
+            <div class="products-cards">
+                <div class="products-img-boxs">
+                    <span class="badge-new">New</span>
+                    <img src="images/u&me.jpg" alt="u&me">
+                </div>
+                <div class="products-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="products-titles">You and Me up and down</div>
+                <div class="products-prices">
+                    <span class="current-price">N20,000</span>
+                    <span class="old-price">N25,000</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    
+   
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonial Slider</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for navigation arrows -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <section class="testimonial-section">
+    <!-- Left Navigation Arrow -->
+    <button class="nav-btn prev-btn" aria-label="Previous testimonial">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+    <!-- Testimonial Content Card -->
+    <div class="testimonial-card">
+      <div class="avatar-container">
+        <img src="images/peter.jpg" alt="peter" class="avatar">
+        <span class="quote-icon">
+          <i class="fa-solid fa-quote-right"></i>
+        </span>
+      </div>
+
+      <blockquote class="testimonial-quote">
+        "Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering."
+      </blockquote>
+
+      <cite class="testimonial-author">- Peter</cite>
+    </div>
+
+    <!-- Right Navigation Arrow -->
+    <button class="nav-btn next-btn" aria-label="Next testimonial">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+  </section>
+
+  <!-- Testimonial / Previous Section Above -->
+
+
+
+ <section class="features-section">
+        <div class="court">
+
+            <div class="features-card">
+                <div class="iicon">
+                    <i class="fa-solid fa-box"></i>
+                </div>
+                <h3 class="ttitle" style="color: black;">Delivery Method</h3>
+                <p class="description">you can come pick it up yourself <br> or you send your address, pay for delivery fee, <br> and your order will be right in front of your door step.</p>
+            </div>
+            
+            <div class="features-card">
+                <div class="iicon">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <h3 class="ttitle" style="color: black;">Secure Payment System</h3>
+                <p class="description">Your Payment is safe and secured with printXpress. <br> All you need to do is to put your card details <br> then the amount of what you ordered with be removed.</p>
+            </div>
+            
+
+            <div class="features-card">
+                <div class="iicon">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                </div>
+                <h3 class="ttitle" style="color: black;">Secure Payment System</h3>
+                <p class="description">Your Payment will be sent to printXpress account, <br> and we will receive your payment.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+<!-- Newsletter Section Below -->
+<section class="newsletter-section">
+  <h2 class="title">Get promotions &amp; updates!</h2>
+  <p class="subtitle">
+    Seamlessly empower fully researched growth strategies and interoperable internal or "organic" sources credibly innovate granular internal.
+  </p>
+  
+  <form class="subscribe-form" onsubmit="event.preventDefault();">
+    <input 
+      type="email" 
+      class="email-input" 
+      placeholder="Enter your mail" 
+      required 
+    />
+    <button type="submit" class="subscribe-btn">Subscribe</button>
+  </form>
+</section>
+
+
+<footer class="sites-footer">
+        <div class="footer-container">
+
+            <div class="footer-col brand-col">
+                <h2 class="footer-logo">printXpress <span>.</span></h2>
+                <p>
+                    A place where quality clothes are made to your taste and also sold out to differenc places in the world.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Offers & Discounts</a></li>
+                    <li><a href="#">Get Coupon</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            
+            <div class="footer-col">
+                <h4>New Products</h4>
+                <ul>
+                    <li><a href="#">Guys Cloth</a></li>
+                    <li><a href="#">Face Caps</a></li>
+                    <li><a href="#">Bags</a></li>
+                    <li><a href="#">stickers for jortter</a></li>
+                </ul>
+            </div>
+
+            
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Frequently Asked Questions</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Report Payment Issues</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+ 
+
+     <script src="scripts.js"></script>
+
+</body>
+</html>
