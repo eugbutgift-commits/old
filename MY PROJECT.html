@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header  class="top-header">
+        <div class="top-left">
+            <span>NIGERIA</span>
+            <span>+234 906 4173 854</span>
+        </div>
+        <div class="top-right">
+            <a href="login.html">My Account</a>
+            <a href="product-list.html">Wish List</a>
+            <a href="card.html">Shopping</a>
+            <a href="pay.html">Cart</a>
+            <a href="checkout.html">Checkout</a>
+        </div>
+    </header>
+    
+    <nav class="main-nav">
+        <div class="logo">printXpress.</div>
+
+        <ul class="nav-linkss">
+            <li><a href="home.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#" onclick="return false;">Category</a>
+                <div class="dropdown-menu">
+                    <a href="product-list.html">Product List</a>
+                    <a href="product-details.html">Product Details</a>
+                </div>
+            </li>
+
+              <li class="dropdown">
+                <a href="#" onclick="return false;">Latest</a>
+                <div class="dropdown-menu">
+                    <a href="product-list.html">Product List</a>
+                    <a href="product-details.html">Product Details</a>
+                </div>
+            </li>
+
+            
+              <li class="dropdown">
+                <a href="#" onclick="return false;">Blog</a>
+                <div class="dropdown-menu">
+                    <a href="blog.html">Blog</a>
+                    <a href="product-details.html">Blog Details</a>
+                </div>
+            </li>
+
+            
+              <li class="dropdown">
+                <a href="#" onclick="return false;">Pages</a>
+                <div class="dropdown-menu">
+                    <a href="login.html">Login</a>
+                    <a href="card.html">Card</a>
+                    <a href="element.html">Element</a>
+                    <a href="aboutt.html">About</a>
+                    <a href="confirmation.html">Confirmation</a>
+                    <a href="shopping.html">Shopping Cart</a>
+                    <a href="checkout.html">Product Checkout</a>
+                </div>
+            </li>
+            <li><a href="pay.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <div class="search-box">
+                <input type="text" id="searchInout" placeholder="Search products">
+                <i class="fa-solid fa-magnifying-glass" id="searchBtn"></i>
+            </div>
+
+            <div class="icon-btn" id="wishlistBtn">
+                <i class="fa-regula fa-heart"></i>
+                <span class="icon-badge" id="wishlistCount">02</span>
+            </div>
+
+            <div class="icon-btn" id="cartBtn">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="icon-badge" id="cartCount">01</span>
+            </div>
+
+            <button class="btn-signin" id="signInBtn">Sign In</button>
+        </div>
+    </nav>
+
+    <section class="heroo-container">
+        <div class="heroo-image-box">
+            <img src="images/logo.jpg" alt="logo">
+        </div>
+        <div class="heroo-content">
+            <div class="discunt-tag">60% Discount</div>
+            <h1>printXpress <br>Collection</h1>
+            <p style="color: black; font-style: italic;">Best Cloth Collection By 2026!</p>
+            <a href="#" class="btn-shop" id="shopBtn">Shop Now</a>
+        </div>
+    </section>
+
+    <main class="containerr">
+        <section class="category-section">
+            <h2 class="section-titlee" style="color: black;">Shop by Category</h2>
+
+            <div class="category-grid">
+
+                <div class="category-card card-light-blue">
+                    <div class="card-img">
+                        <img src="images/armlessjacket.jpg" alt="armlessjacket">
+                    </div>
+                    <div class="card-text">
+                        <h3>Armless Jacket</h3>
+                        <a href="#" class="badge-yellow">Best New Deals</a>
+                        <span class="sub-blue">New Collection</span>
+                    </div>
+                </div>
+                  <div class="category-card card-light-pink">
+                    <div class="card-img">
+                        <img src="images/sweetjacket4.jpg" alt="sweetjacket4">
+                    </div>
+                    <div class="card-text">
+                        <span class="discount-script">Discount!</span>
+                        <h3>Winter Cloth</h3>
+                        <p class="small-subtitle">New Collection</p>
+                </div>
+            </div>
+            <div class="category-card card-light-blue">
+                    <div class="card-img">
+                        <img src="images/polo.jpg" alt="polo">
+                    </div>
+                    <div class="card-text">
+                        <h3>Man's Cloth</h3>
+                        <a href="#" class="badge-yellow">Best New Deals</a>
+                        <span class="sub-blue">New Collection</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="latest-section">
+            <div class="latest-header">
+                <h2>Latest Products</h2>
+                <ul class="filter-tabs">
+                    <li><a href="#" class="actove">All</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Featured</a></li>
+                    <li><a href="#">Offer</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <a href="#" class="Scroll-To-Top-btn" id="scrollTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <div class="products-containers">
+        <div class="products-grids">
+
+            <div class="products-cards">
+                <div class="products-img-boxs">
+                    <span class="badge-new">New</span>
+                    <img src="images/polo4.jpg" alt="polo4">
+                </div>
+                <div class="products-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="products-titles">Black quality Polo</div>
+                <div class="products-prices">
+                    <span class="current-price">N17,000</span>
+                    <span class="old-price">N20,000</span>
+                </div>
+            </div>
+            <div class="products-cards">
+                <div class="products-img-boxs">
+                    <span class="badge-new">New</span>
+                    <img src="images/polo9.jpg" alt="polo9">
+                </div>
+                <div class="products-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="products-titles">White designed quality Polo</div>
+                <div class="products-prices">
+                    <span class="current-price">N20,000</span>
+                    <span class="old-price">N25,000</span>
+                </div>
+            </div>
+            <div class="products-cards">
+                <div class="products-img-boxs">
+                    <span class="badge-new">New</span>
+                    <img src="images/long plain.jpg" alt="long plain">
+                </div>
+                <div class="products-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="products-titles">Long Joggers</div>
+                <div class="products-prices">
+                    <span class="current-price">N20,000</span>
+                    <span class="old-price">N25,000</span>
+                </div>
+            </div>
+            <div class="products-cards">
+                <div class="products-img-boxs">
+                    <span class="badge-new">New</span>
+                    <img src="images/shirtjacketd.jpg" alt="shirtjacketd">
+                </div>
+                <div class="products-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="products-titles">Shirt Jacket</div>
+                <div class="products-prices">
+                    <span class="current-price">N25,000</span>
+                    <span class="old-price">N30,000</span>
+                </div>
+            </div>
+            <div class="products-cards">
+                <div class="products-img-boxs">
+                    <span class="badge-new">New</span>
+                    <img src="images/tshirt.jpg" alt="tshirt">
+                </div>
+                <div class="products-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="products-titles">T-Shirt</div>
+                <div class="products-prices">
+                    <span class="current-price">N20,000</span>
+                    <span class="old-price">N25,000</span>
+                </div>
+            </div>
+            <div class="products-cards">
+                <div class="products-img-boxs">
+                    <span class="badge-new">New</span>
+                    <img src="images/top.jpg" alt="top">
+                </div>
+                <div class="products-ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="products-titles">Boys on Vibes</div>
+                <div class="products-prices">
+                    <span class="current-price">N15,000</span>
+                    <span class="old-price">N18,000</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <section class="promo-banners">
+
+        <div class="banner-left">
+            <span class="bg-text-outline">MANZ</span>
+            <img src="images/peter.jpg" alt="peter" style="width: 300px; height: 500px;">
+        </div>
+
+        <div class="banner-center">
+            <h1>Find The Best Product <br> from Our Shop</h1>
+            <p style="color: black;">Designers who are intrested in creating state of the art fashion itmes.</p>
+            <a href="#" class="btn-shop-black" id="bannerShopBtn">Shop Now</a>
+        </div>
+
+        <div class="banner-right">
+            <img src="images/armlessjacket.jpg" alt="armlessjacket" class="accent-top-img">
+            <img src="images/bov cap.jpg" alt="bov cap" class="accent-bottom-img" height="100px">
+        </div>
+
+    </section>
+
+    <div class="court">
+
+        <div class="left">
+            <h1>
+                Best Collection <br>
+                of This Month
+            </h1>
+
+            <p class="subtitles">Designers who are interesten crea.</p>
+
+            <button class="shopp" onclick="shopNow()">
+                Shop Now
+            </button>
+
+            <div class="bottom-img-box">
+              <img src="images/boywear.jpg" class="boywear">
+            </div>
+
+        </div>
+
+        <div class="middle">
+
+            <img id="mainImage"
+             src="images/bigbro.jpg " style="position: relative; left: 150px;"
+             class="model">
+
+            <div class="vertical-text" style="color: #a7bdee; left: 150px; bottom: 80px;">
+                DENIM
+            </div>
+
+        </div>
+
+        <div class="right">
+
+            <div class="pproduct" onclick="changeProduct('images/polo7.jpg')">
+
+                <div class="pproduct-text">
+                    <p>Unisex <br> Polo</p>
+                </div>
+
+                <img src="images/polo7.jpg" alt="polo">
+
+            </div>
+
+            <div class="product selected">
+                <div class="pproduct-text" style="position: relative; right: 80px; background-color: #2563eb; color: #fff; padding: 12px 24px; border-radius: 8px; width: 150px; height: 70px;">
+                    <p>Joggers</p>
+                </div>
+
+                <img src="images/plain long2.jpg" alt="Joggers" width="80px" height="80px" style="position: relative; left: -60px;" >
+                
+            </div>
+
+            <div class="pproduct"onclick="changeProduct('images/set of boy clothe.jpg')">
+
+                <div class="pproduct-text">
+                    <p>clothing <br> Set</p>
+                </div>
+
+                <img src="images/set of boy clothe.jpg" alt="clothing Set" width="50px" height="50px">
+            </div>
+
+        </div>
+
+    </div>
+
+    <section class="features-section">
+        <div class="court">
+
+            <div class="features-card">
+                <div class="iicon">
+                    <i class="fa-solid fa-box"></i>
+                </div>
+                <h3 class="ttitle" style="color: black;">Delivery Method</h3>
+                <p class="description">you can come pick it up yourself <br> or you send your address, pay for delivery fee, <br> and your order will be right in front of your door step.</p>
+            </div>
+            
+            <div class="features-card">
+                <div class="iicon">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <h3 class="ttitle" style="color: black;">Secure Payment System</h3>
+                <p class="description">Your Payment is safe and secured with printXpress. <br> All you need to do is to put your card details <br> then the amount of what you ordered with be removed.</p>
+            </div>
+            
+
+            <div class="features-card">
+                <div class="iicon">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                </div>
+                <h3 class="ttitle" style="color: black;">Secure Payment System</h3>
+                <p class="description">Your Payment will be sent to printXpress account, <br> and we will receive your payment.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="image-row">
+        <div class="image-item">
+            <img src="images/sweetjacket2.jpg" alt="sweetjacket2">
+        </div>
+        <div class="image-item">
+            <img src="images/polo8.jpg" alt="polo8">
+        </div>
+        <div class="image-item">
+            <img src="images/top.jpg" alt="top">
+        </div>
+        <div class="image-item">
+            <img src="images/cropshirt3.jpg" alt="cropshirt3">
+        </div>
+        <div class="image-item">
+            <img src="images/boysclothes.jpg" alt="boysclothes">
+        </div>
+    </div>
+
+    <footer class="sites-footer">
+        <div class="footer-container">
+
+            <div class="footer-col brand-col">
+                <h2 class="footer-logo">printXpress <span>.</span></h2>
+                <p>
+                    A place where quality clothes are made to your taste and also sold out to differenc places in the world.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Offers & Discounts</a></li>
+                    <li><a href="#">Get Coupon</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            
+            <div class="footer-col">
+                <h4>New Products</h4>
+                <ul>
+                    <li><a href="#">Guys Cloth</a></li>
+                    <li><a href="#">Face Caps</a></li>
+                    <li><a href="#">Bags</a></li>
+                    <li><a href="#">stickers for jortter</a></li>
+                </ul>
+            </div>
+
+            
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Frequently Asked Questions</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Report Payment Issues</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+
+
+     <script src="scripts.js"></script>
+  
+</body>
+</html>
