@@ -1,6 +1,7 @@
 
 
 
+
 document.querySelector('.dropdown a').addEventListener('click', function(e){
     e.preventDefault();
     let menu = document.querySelector('dropdown-content');
@@ -318,6 +319,3 @@ payButton.addEventListener('click', function(e) {
     // Redirects to your new page:
     window.location.href = 'proceed-to-pay.html'; 
 });
-
-
-
